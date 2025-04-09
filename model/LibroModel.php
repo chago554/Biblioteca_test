@@ -9,7 +9,7 @@ class LibroModel {
     // Métodos para interactuar con la base de datos
     public function listar() {
         try {
-            $stmt = $this->pdo->query("SELECT id, title, description, author, published_year, isbn FROM books LIMIT 10");
+            $stmt = $this->pdo->query("SELECT id, title, description, author, published_year, isbn FROM books");
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
             error_log("Error al obtener los libros: " . $e->getMessage());

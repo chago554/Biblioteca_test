@@ -13,7 +13,7 @@
 
 
 <body>
-    <div class="container">
+    <div class="container p-5 mb-5"> 
         <h1>Lista de Libros</h1>
         <table class="table table-striped">
             <thead>

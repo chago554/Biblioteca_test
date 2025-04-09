@@ -1,12 +1,108 @@
-# Biblioteca_test_practico
+# 🛠️ Biblioteca_test_practico
 
-La version de PHP utilizada es: PHP 8.4.1
-La versión de MySQL utilizada es: 8.0.41
+- **Versión:** 1.0.0  
+- **Fecha:** 2024-04-08  
+- **Autor:** Santiago Jesús Laureano Flores  
 
-# Script SQL para crear la base de datos
+---
 
-CREATE DATABASE BIBLIOTECA; 
+## 📋 Descripción del Proyecto
 
-USE BIBLIOTECA; 
+Este es un proyecto de prueba para evaluar habilidades en desarrollo web. El objetivo es crear una aplicación web utilizando **PHP**, **HTML**, **CSS** y **JavaScript**.
 
-CREATE TABLE books(id int PRIMARY KEY AUTO_INCREMENT, title VARCHAR(255), author VARCHAR(255), published_year int, isbn VARCHAR (13), description TEXT, created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP), update_at TIMESTAMP);
+La aplicación interactúa con una **API RESTful** para realizar operaciones **CRUD** (Crear, Leer, Actualizar, Eliminar) sobre una base de datos en **MySQL**. Además, debe contar con una interfaz de usuario amigable y responsiva, usando **Bootstrap** u otro framework CSS similar.
+
+Se espera que el código esté bien estructurado, siguiendo el patrón **MVC (Modelo-Vista-Controlador)** y las **mejores prácticas de desarrollo web**.
+
+---
+
+## 🚀 Tecnologías Utilizadas
+
+- **Frontend:** HTML, CSS, JavaScript, Bootstrap
+- **Backend:** PHP 8.4.1
+- **Base de Datos:** MySQL 8.0.41
+- **Control de Versiones:** Git
+- **Entorno de Desarrollo:** Visual Studio Code
+- **Servidor Local:** Apache 2 (XAMPP, LAMP o similar)
+
+---
+
+## 💻 Requisitos del Sistema
+
+- PHP >= 8.0  
+- MySQL >= 8.0  
+- Apache2 o servidor compatible con PHP  
+- Navegador web moderno (Chrome, Firefox, Edge, etc.)  
+- Composer (opcional, si usas dependencias externas)  
+- Sistema operativo: Windows, Linux o macOS
+
+---
+
+## 📦 Instrucciones de Instalación
+
+1. Clona este repositorio:
+
+```bash
+git clone https://github.com/chago554/Biblioteca_test.git
+cd Biblioteca_test_practico
+```
+
+---
+
+
+2. Configura las credenciales de la base de datos:
+
+Edita el archivo config/config.php con tus datos:
+
+```bash
+<?php
+$DB_HOST = '127.0.0.1';
+$DB_NAME = 'BIBLIOTECA';
+$DB_USER = 'tu_usuario';
+$DB_PASSWORD = 'tu_contraseña';
+?>
+```
+---
+
+3. Importa la base de datos:
+
+4. Abre el proyecto en tu navegador desde:
+http://localhost/Biblioteca_test/public/index.php
+
+
+---
+
+📁 Estructura de Carpetas
+```bash
+Biblioteca_test/
+├── config/
+│   ├── config.php
+│   └── database.php
+├── controller/
+│   └── LibroController.php
+├── model/
+│   └── LibroModel.php  
+├── public/
+│   └── index.php
+└── view/
+    ├── layouts/
+    │   ├── footer.php
+    │   └── header.php
+    └── libro/
+        ├── editar.php
+        ├── listar.php    
+        └── template.php  
+```
+
+---
+
+🧠 Decisiones de Diseño
+Patrón MVC: Se separaron responsabilidades en modelos, vistas y controladores para mantener el código limpio y modular.
+
+Diseño responsivo: Se utilizó Bootstrap para asegurar una buena experiencia en distintos dispositivos.
+
+Paleta de colores: Azul y blanco, para transmitir una estética profesional y ordenada.
+
+Simplicidad: Se priorizó un código fácil de mantener y escalar, evitando dependencias innecesarias.
+
+Base de datos: Estructura normalizada para facilitar relaciones entre entidades en futuras ampliaciones.

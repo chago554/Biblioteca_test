@@ -40,17 +40,17 @@
 
             <div class="mb-3">
                 <label for="title" class="form-label">Título</label>
-                <input type="text" name="title" class="form-control" value="<?php echo $_SESSION['old']['title'] ?? ''; ?>">
+                <input type="text" name="title" class="form-control" required>
             </div>
 
             <div class="mb-3">
                 <label for="description" class="form-label">Descripción</label>
-                <input type="text" class="form-control" id="description" name="description">
+                <input type="text" class="form-control" id="description" name="description" >
             </div>
 
             <div class="mb-3">
                 <label for="author" class="form-label">Autor</label>
-                <input type="text" name="author" class="form-control" value="<?php echo $_SESSION['old']['author'] ?? ''; ?>">
+                <input type="text" name="author" class="form-control" required>
             </div>
 
             <div class="mb-3">
