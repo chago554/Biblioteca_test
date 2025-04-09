@@ -33,7 +33,6 @@ Se espera que el código esté bien estructurado, siguiendo el patrón **MVC (Mo
 - MySQL >= 8.0  
 - Apache2 o servidor compatible con PHP  
 - Navegador web moderno (Chrome, Firefox, Edge, etc.)  
-- Composer (opcional, si usas dependencias externas)  
 - Sistema operativo: Windows, Linux o macOS
 
 ---
@@ -66,13 +65,15 @@ $DB_PASSWORD = 'tu_contraseña';
 
 3. Importa la base de datos:
 
-4. Abre el proyecto en tu navegador desde:
-http://localhost/Biblioteca_test/public/index.php
+4. Abre el proyecto en tu navegador desde la carpeta public:
 
+```bash
+http://localhost/Biblioteca_test_practico/public/
+```
 
 ---
 
-📁 Estructura de Carpetas
+## 📁 Estructura de Carpetas
 ```bash
 Biblioteca_test/
 ├── config/
@@ -96,7 +97,7 @@ Biblioteca_test/
 
 ---
 
-🧠 Decisiones de Diseño
+## 🧠 Decisiones de Diseño
 Patrón MVC: Se separaron responsabilidades en modelos, vistas y controladores para mantener el código limpio y modular.
 
 Diseño responsivo: Se utilizó Bootstrap para asegurar una buena experiencia en distintos dispositivos.
